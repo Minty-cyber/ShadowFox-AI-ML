@@ -11,5 +11,5 @@ path_test_labels ='test_labels'
 
 
 custom_transforms = transforms.Compose([
-    transforms.ToPIL
+    transforms.ToPILImage()
 ])
