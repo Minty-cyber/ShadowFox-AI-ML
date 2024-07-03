@@ -39,3 +39,5 @@ model = core.Model(trained_labels) #Initialize model
 
 model.get_internal_model()
 
+losses = model.fit(train_loader, test_dataset, epochs=2, verbose=True)
+
