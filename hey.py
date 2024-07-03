@@ -13,6 +13,6 @@ path_test_labels ='test_labels'
 custom_transforms = transforms.Compose([
     transforms.ToPILImage(),#Converts it to pillow image
     transforms.Resize(50), #Resizes the images to a smaller size
-    transforms.RandomHorizontalFlip()
+    transforms.RandomHorizontalFlip(),
     
 ])
