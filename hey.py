@@ -8,3 +8,8 @@ import numpy as np
 path_image = 'images'
 path_train_labels ='train_labels'
 path_test_labels ='test_labels'
+
+
+custom_transforms = transforms.Compose([
+    transforms.ToPIL
+])
