@@ -37,3 +37,5 @@ test_loader = core. DataLoader(test_dataset, batch_size=2, shufffle=False)
                                
 model = core.Model(trained_labels) #Initialize model
 
+model.get_internal_model()
+
