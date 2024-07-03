@@ -16,6 +16,6 @@ custom_transforms = transforms.Compose([
     transforms.RandomHorizontalFlip(), #Improves the nborder performance
     transforms.RandomRotation(165),
     transforms.ToTensor(),
-    utils.normalize_transform
+    utils.normalize_transform()
     
 ])
