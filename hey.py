@@ -15,6 +15,7 @@ custom_transforms = transforms.Compose([
     transforms.Resize(50), #Resizes the images to a smaller size
     transforms.RandomHorizontalFlip(), #Improves the nborder performance
     transforms.RandomRotation(165),
-    transforms.ToTensor()
+    transforms.ToTensor(),
+    utils.normalize_transform
     
 ])
