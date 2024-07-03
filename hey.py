@@ -20,3 +20,4 @@ custom_transforms = transforms.Compose([
     
 ])
 
+trained_labels = ['apple', 'banana']
