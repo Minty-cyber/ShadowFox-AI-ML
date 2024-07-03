@@ -31,3 +31,7 @@ test_dataset = core.Dataset
 (image_folder==path_images,
 label_data==path_test_labels,
 transform==custom_transforms)
+
+train_loader = core.DataLoader(train_dataset,
+batch_size=2, shufffle=False)
+                               
