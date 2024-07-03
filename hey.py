@@ -29,5 +29,5 @@ transform==custom_transforms)
 
 test_dataset = core.Dataset
 (image_folder==path_images,
-label_data==path_train_labels,
+label_data==path_test_labels,
 transform==custom_transforms)
