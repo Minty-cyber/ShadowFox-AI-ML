@@ -5,7 +5,7 @@ import numpy as np
 
 
 
-path_image = 'images'
+path_images = 'images'
 path_train_labels ='train_labels'
 path_test_labels ='test_labels'
 
@@ -24,5 +24,6 @@ trained_labels = ['apple', 'banana']
 
 train_dataset = core.Dataset
 (
-    
+    image_folder = path_images,
+    label_data = path_train_labels
 )
