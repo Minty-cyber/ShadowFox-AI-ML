@@ -36,3 +36,4 @@ train_loader = core.DataLoader(train_dataset, batch_size=2, shufffle=False)
 test_loader = core. DataLoader(test_dataset, batch_size=2, shufffle=False)
                                
 model = core.Model(trained_labels) #Initialize model
+
