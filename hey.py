@@ -32,6 +32,5 @@ test_dataset = core.Dataset
 label_data==path_test_labels,
 transform==custom_transforms)
 
-train_loader = core.DataLoader(train_dataset,
-batch_size=2, shufffle=False)
+train_loader = core.DataLoader(train_dataset, batch_size=2, shufffle=False)
                                
