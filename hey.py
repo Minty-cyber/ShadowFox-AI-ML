@@ -23,7 +23,8 @@ custom_transforms = transforms.Compose([
 trained_labels = ['apple', 'banana']
 
 train_dataset = core.Dataset
-(
-    image_folder = path_images,
-    label_data = path_train_labels
-)
+(image_folder=path_images,
+label_data=path_train_labels,
+transform=custom_transforms)
+
+train_dataset = core.Dataset
