@@ -1,18 +1,13 @@
 import streamlit as st
+import torch
+import torchvision
+from torchvision import models, transforms
+import cv2
+import numpy as np
+from PIL import Image
+import matplotlib.pyplot as plt
+import io
 
-# Import required libraries with error handling
-try:
-    import torch
-    import torchvision
-    from torchvision import models, transforms
-    import cv2
-    import numpy as np
-    from PIL import Image
-    import matplotlib.pyplot as plt
-    import io
-except ImportError as e:
-    st.error(f"Import error: {e}. Please ensure all required libraries are installed.")
-    st.stop()
 
 # Load the pre-trained model with weights
 weights = models.detection.FasterRCNN_ResNet50_FPN_Weights.DEFAULT
