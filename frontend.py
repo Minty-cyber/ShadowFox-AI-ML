@@ -48,7 +48,7 @@ def visualize_predictions(image, predictions, threshold=0.5):
             label_idx = predictions[0]['labels'][idx].item()
             label = COCO_INSTANCE_CATEGORY_NAMES[label_idx]
             cv2.rectangle(image, (x1, y1), (x2, y2), (0, 255, 0), 2)
-            cv2.putText(image, f'{label}: {score:.2f}', (x1, y1-10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
+            # cv2.putText(image, f'{label}: {score:.2f}', (x1, y1-10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
     return image
 
 # Streamlit app
