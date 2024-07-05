@@ -9,17 +9,17 @@ import matplotlib.pyplot as plt
 import io
 
 
-# Load the pre-trained model with weights
+
 weights = models.detection.FasterRCNN_ResNet50_FPN_Weights.DEFAULT
 model = models.detection.fasterrcnn_resnet50_fpn(weights=weights)
 model.eval()
 
-# Define the image transformation
+
 transform = transforms.Compose([
     transforms.ToTensor()
 ])
 
-# Load COCO labels
+
 COCO_INSTANCE_CATEGORY_NAMES = [
     '__background__', 'person', 'bicycle', 'car', 'motorcycle', 'airplane', 'bus',
     'train', 'truck', 'boat', 'traffic light', 'fire hydrant', 'N/A', 'stop sign',
