@@ -85,4 +85,4 @@ if uploaded_file is not None:
         if score > 0.5:
             label_idx = predictions[0]['labels'][idx].item()
             label = COCO_INSTANCE_CATEGORY_NAMES[label_idx]
-            st.write(f"{label}: {score:.2f}")
+            st.write(f"{label}")
